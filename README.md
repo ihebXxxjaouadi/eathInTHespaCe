@@ -2,4 +2,4 @@
 https://github.com/ihebXxxjaouadi/eathInTHespaCe
 
 
-<img src="./capture" width="300" />
+<img src="./Screenshot 2024-07-25 233448.png" width="300" />
