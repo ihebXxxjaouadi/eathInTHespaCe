@@ -1,0 +1,150 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    position: relative;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+
+
+}
+
+
+.space {
+    width: 300px;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 35px ; 
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+
+
+}
+.space::before {
+    content: "welcome to earth by Iheb.";
+    position: absolute;
+    z-index: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: white;
+    animation: welcoming 13s forwards linear ;
+    padding: 0 60px;
+
+    opacity: 0;
+}
+
+
+@keyframes welcoming {
+   
+    78%{
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+
+    }
+
+}
+
+.space::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 35px #333; 
+    
+    z-index: 199;
+    background: #000;
+    text-align: center;
+    
+animation: dark 10s forwards linear ;
+opacity: 1;
+}
+
+
+@keyframes dark {
+    20% {
+        opacity: 0;
+        
+    }
+    85% {
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+
+    }
+
+}
+
+
+.space > img {
+    position: absolute;
+    right: 0;
+    width: 100;
+    height: 100%;
+    transform: translateX(-50%);
+    animation: space 10s forwards linear ;
+    transform : translateX(0%);
+
+  
+} 
+ @keyframes space {
+
+    to {
+        transform : translateX(calc(100% - 300px));
+    }
+    
+}
+
+.earthContainer {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 50%;
+    border: 1px solid #ffffff50;
+    box-shadow: 0 0 60px #a7e5f8;
+    z-index: 100;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.earthContainer img {
+    height: 150px;
+    animation: earth 15s forwards linear ;
+    transform : translateX(0%);
+
+  
+} 
+ @keyframes earth {
+
+    to {
+        transform : translateX(calc(-100% + 150px));
+    }
+    
+}
+
+.logoIheb {
+    width: 120px;
+    position: absolute;
+    bottom: 30px;
+    z-index: 201;
+    filter: invert(1);
+}
