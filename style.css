@@ -156,7 +156,28 @@ opacity: 1;
     bottom: 30px;
     z-index: 201;
     filter: invert(1);
+    animation: showLogo 14s forwards;
+    animation-delay: 5s;
+    opacity: 0;
+
+
+
 }
+
+
+@keyframes showLogo {
+    from, 95% {
+        opacity: 0;
+    }
+    
+
+    to {
+        opacity: 1;
+        transform: translateY(-25px);
+    }
+}
+
+
 
 .aSec {
     z-index: 230;
@@ -168,6 +189,8 @@ opacity: 1;
 
 
 }
+
+
 @keyframes hideSec {
         85% {
             opacity: 1;
