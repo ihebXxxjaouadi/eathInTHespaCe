@@ -40,8 +40,10 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     color: white;
-    animation: welcoming 13s forwards linear ;
+    animation: welcoming 15s forwards linear ;
     padding: 0 60px;
+    animation-delay: 5s;
+
 
     opacity: 0;
 }
@@ -73,7 +75,10 @@ body {
     background: #000;
     text-align: center;
     
-animation: dark 10s forwards linear ;
+animation: dark 12s forwards linear ;
+animation-delay: 5s;
+
+
 opacity: 1;
 }
 
@@ -101,8 +106,10 @@ opacity: 1;
     width: 100;
     height: 100%;
     transform: translateX(-50%);
-    animation: space 10s forwards linear ;
+    animation: space 12s forwards linear ;
     transform : translateX(0%);
+    animation-delay: 5s;
+
 
   
 } 
@@ -128,8 +135,10 @@ opacity: 1;
 }
 .earthContainer img {
     height: 150px;
-    animation: earth 15s forwards linear ;
+    animation: earth 18s forwards linear ;
     transform : translateX(0%);
+    animation-delay: 5s;
+
 
   
 } 
@@ -147,4 +156,24 @@ opacity: 1;
     bottom: 30px;
     z-index: 201;
     filter: invert(1);
+}
+
+.aSec {
+    z-index: 230;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    animation: hideSec 5s forwards;
+    opacity: 1;
+
+
+}
+@keyframes hideSec {
+        85% {
+            opacity: 1;
+        }
+
+        95%, to {
+            opacity: 0;
+        }
 }
