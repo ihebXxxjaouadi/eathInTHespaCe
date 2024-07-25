@@ -33,34 +33,7 @@ body {
 
 
 }
-.space::before {
-    content: "welcome to earth by Iheb.";
-    position: absolute;
-    z-index: 200;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    color: white;
-    animation: welcoming 14s forwards linear ;
-    padding: 0 60px;
-    animation-delay: 5s;
 
-
-    opacity: 0;
-}
-
-
-@keyframes welcoming {
-   
-    87%{
-        opacity: 0;
-
-    }
-    to {
-        opacity: 1;
-
-    }
-
-}
 
 .space::after {
     content: "";
@@ -153,7 +126,6 @@ opacity: 1;
 .logoIheb {
     width: 120px;
     position: absolute;
-    bottom: 30px;
     z-index: 201;
     filter: invert(1);
     animation: showLogo 14s forwards;
@@ -173,7 +145,6 @@ opacity: 1;
 
     to {
         opacity: 1;
-        transform: translateY(-25px);
     }
 }
 
@@ -200,3 +171,4 @@ opacity: 1;
             opacity: 0;
         }
 }
+
